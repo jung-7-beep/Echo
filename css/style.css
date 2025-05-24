@@ -1,0 +1,130 @@
+/* 全局样式 */
+:root {
+    --primary-color: #4CAF50; /* 华中农绿色主题 */
+    --secondary-color: #8BC34A;
+    --accent-color: #CDDC39;
+    --dark-green: #2E7D32;
+    --light-green: #C8E6C9;
+    --text-color: #333;
+    --light-text: #f5f5f5;
+}
+
+body {
+    font-family: 'Microsoft YaHei', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* 页眉样式 */
+header {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.logo p {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0 0;
+}
+
+nav a {
+    color: var(--light-text);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--dark-green);
+}
+
+/* 主要内容区 */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: var(--light-green);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.banner h2 {
+    color: var(--dark-green);
+    font-size: 2rem;
+}
+
+.intro {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.feature-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+/* 页脚样式 */
+footer {
+    background-color: var(--dark-green);
+    color: var(--light-text);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
+    }
+}

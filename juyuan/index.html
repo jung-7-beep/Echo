@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>橘园 - 重生之我在华农吃什么</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .food-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .food-image {
+            width: 100%;
+            height: 200px;
+            background-color: #f5f5f5;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+        .food-info {
+            flex: 1;
+        }
+        .food-title {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+        .rating {
+            color: #FFC107;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+        @media (min-width: 768px) {
+            .food-item {
+                flex-direction: row;
+                gap: 1.5rem;
+            }
+            .food-image {
+                width: 300px;
+                height: 200px;
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>橘园美食</h1>
+            <p>华中农业大学橘园美食指南</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../xiaochijie/index.html">小吃街</a></li>
+                <li><a href="../juyuan/index.html">橘园</a></li>
+                <li><a href="../zhuyuan/index.html">竹苑食堂</a></li>
+                <li><a href="../huiyuan/index.html">荟园餐厅</a></li>
+                <li><a href="../taoyuan/index.html">桃园食堂</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="food-list">
+            <div class="food-item">
+                <div class="food-image">新疆大盘鸡图片</div>
+                <div class="food-info">
+                    <h2 class="food-title">新疆大盘鸡</h2>
+                    <p>鸡肉鲜嫩入味，土豆吸饱浓郁汤汁，绵密沙软，搭配皮带面，浸入香辣醇厚的汤汁中，柔韧爽滑。超大分量适合多人共享，一口鸡肉、一口面，满满都是西北豪迈风情。</p>
+                    <div class="rating">推荐指数：★★★★★</div>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-image">丁丁炒面图片</div>
+                <div class="food-info">
+                    <h2 class="food-title">丁丁炒面</h2>
+                    <p>将面切成小丁，与彩椒、洋葱、羊肉等一同炒制，色泽鲜艳诱人。面丁筋道有嚼劲，配菜脆爽，羊肉鲜嫩多汁，各种食材的味道相互交融，咸香微辣，口感丰富，一口接一口根本停不下来。</p>
+                    <div class="rating">推荐指数：★★★★☆</div>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-image">拉条子图片</div>
+                <div class="food-info">
+                    <h2 class="food-title">拉条子</h2>
+                    <p>纯手工抻拉的面条，根根粗细均匀，筋道爽滑。可搭配西红柿鸡蛋、韭菜肉丁等各种浇头，简单一拌，面条充分裹满酱汁，吃起来爽滑利口，每一口都充满麦香，是新疆人餐桌上的经典主食，价格实惠。</p>
+                    <div class="rating">推荐指数：★★★☆☆</div>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-image">牛肉拌粉图片</div>
+                <div class="food-info">
+                    <h2 class="food-title">牛肉拌粉</h2>
+                    <p>米粉软糯 Q 弹，牛肉卤制入味，肉质紧实，搭配香脆的花生米、爽口的酸豆角，淋上秘制红油，香辣过瘾。米粉吸饱了红油汤汁的香味，每一口都让人食欲大增。</p>
+                    <div class="rating">推荐指数：★★★★☆</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 重生之我在华农吃什么 - 华中农业大学美食指南</p>
+    </footer>
+</body>
+</html>
