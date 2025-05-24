@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>竹苑食堂 - 重生之我在华农吃什么</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .food-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .food-image {
+            width: 100%;
+            height: 200px;
+            background-color: #f5f5f5;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+        .food-info {
+            flex: 1;
+        }
+        .food-title {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+        .rating {
+            color: #FFC107;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+        .floor-title {
+            color: var(--dark-green);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin: 2rem 0 1rem;
+        }
+        @media (min-width: 768px) {
+            .food-item {
+                flex-direction: row;
+                gap: 1.5rem;
+            }
+            .food-image {
+                width: 300px;
+                height: 200px;
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>竹苑食堂</h1>
+            <p>华中农业大学竹苑食堂美食指南</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../xiaochijie/index.html">小吃街</a></li>
+                <li><a href="../juyuan/index.html">橘园</a></li>
+                <li><a href="../zhuyuan/index.html">竹苑食堂</a></li>
+                <li><a href="../huiyuan/index.html">荟园餐厅</a></li>
+                <li><a href="../taoyuan/index.html">桃园食堂</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="floor-title">一楼美食</h2>
+        <section class="food-list">
+            <div class="food-item">
+                <div class="food-image">匠人烧卤饭图片</div>
+                <div class="food-info">
+                    <h2 class="food-title">匠人烧卤饭</h2>
+                    <p>烧卤味道浓郁，肉质鲜嫩，米饭软糯，搭配合理，性价比高。</p>
+                    <div class="rating">推荐指数：★★★★☆</div>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-image">秘制牛骨手工面图片</div>
+                <div class="food-info">
+                    <h2 class="food-title">秘制牛骨手工面/粉</h2>
+                    <p>牛骨汤浓郁醇厚，面条劲道，牛肉和肥肠炖得软烂入味，汤汁浓郁，回味无穷。</p>
+                    <div class="rating">推荐指数：★★★★★</div>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-image">营养套餐饭图片</div>
+                <div class="food-info">
+                    <h2 class="food-title">营养套餐饭</h2>
+                    <p>菜品种类丰富，口味多样，适合不同口味的学生。胡萝卜排骨软糯，辣椒炒肉香辣可口，回锅肉肥而不腻，干锅花菜和炒空心菜清爽解腻。</p>
+                    <div class="rating">推荐指数：★★★★☆</div>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="floor-title">二楼美食</h2>
+        <section class="food-list">
+            <div class="food-item">
+                <div class="food-image">烧烤图片</div>
+                <div class="food-info">
+                    <h2 class="food-title">烧烤</h2>
+                    <p>烤串种类丰富，价格实惠。猪肉筋筋道有嚼劲，土豆片烤得香脆，金针菇鲜嫩多汁。</p>
+                    <div class="rating">推荐指数：★★★★★</div>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-image">简朴寨餐厅图片</div>
+                <div class="food-info">
+                    <h2 class="food-title">简朴寨餐厅</h2>
+                    <p>小炒黄牛肉鲜嫩多汁，油条包麻糍外酥里软，藕汤香甜浓郁，是食堂中的高端选择，适合想要改善伙食的同学。</p>
+                    <div class="rating">推荐指数：★★★★☆</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 重生之我在华农吃什么 - 华中农业大学美食指南</p>
+    </footer>
+</body>
+</html>
