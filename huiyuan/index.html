@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>荟园餐厅 - 重生之我在华农吃什么</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .food-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .food-image {
+            width: 100%;
+            height: 200px;
+            background-color: #f5f5f5;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+        .food-info {
+            flex: 1;
+        }
+        .food-title {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+        .rating {
+            color: #FFC107;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+        .floor-title {
+            color: var(--dark-green);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin: 2rem 0 1rem;
+        }
+        .recommendations {
+            background-color: var(--light-green);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        .recommendation-category {
+            margin-bottom: 1.5rem;
+        }
+        .recommendation-category h3 {
+            color: var(--dark-green);
+            margin-bottom: 0.5rem;
+        }
+        @media (min-width: 768px) {
+            .food-item {
+                flex-direction: row;
+                gap: 1.5rem;
+            }
+            .food-image {
+                width: 300px;
+                height: 200px;
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>荟园餐厅</h1>
+            <p>华中农业大学荟园餐厅美食指南</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../xiaochijie/index.html">小吃街</a></li>
+                <li><a href="../juyuan/index.html">橘园</a></li>
+                <li><a href="../zhuyuan/index.html">竹苑食堂</a></li>
+                <li><a href="../huiyuan/index.html">荟园餐厅</a></li>
+                <li><a href="../taoyuan/index.html">桃园食堂</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="floor-title">一楼美食</h2>
+        <section class="food-list">
+            <div class="food-item">
+                <div class="food-image">大盘鸡面图片</div>
+                <div class="food-info">
+                    <h2 class="food-title">山西特色面-大盘鸡面</h2>
+                    <p>面条劲道，鸡肉入味，酱汁浓郁，份量足，适合喜欢重口味的人。</p>
+                    <div class="rating">推荐指数：⭐⭐⭐⭐</div>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-image">凉皮图片</div>
+                <div class="food-info">
+                    <h2 class="food-title">凉皮</h2>
+                    <p>清爽开胃，调味适中，辣椒油香而不辣，夏天吃很合适。</p>
+                    <div class="rating">推荐指数：⭐⭐⭐⭐</div>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-image">健康餐图片</div>
+                <div class="food-info">
+                    <h2 class="food-title">健康餐</h2>
+                    <p>低油低盐，搭配均衡，适合减脂人群，但口味偏清淡，可能不够满足重口味爱好者。</p>
+                    <div class="rating">推荐指数：⭐⭐⭐</div>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="floor-title">二楼美食</h2>
+        <section class="food-list">
+            <div class="food-item">
+                <div class="food-image">亦鱼亦饭图片</div>
+                <div class="food-info">
+                    <h2 class="food-title">亦鱼亦饭</h2>
+                    <p>鱼肉鲜嫩，酱汁下饭，推荐番茄鱼和酸菜鱼，汤汁浓郁，拌饭一绝。</p>
+                    <div class="rating">推荐指数：⭐⭐⭐⭐</div>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-image">馋肉娃图片</div>
+                <div class="food-info">
+                    <h2 class="food-title">馋肉娃</h2>
+                    <p>肉食爱好者的天堂，烤肉、炸鸡排等肉质鲜嫩，调味适中，但略油腻。</p>
+                    <div class="rating">推荐指数：⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="floor-title">三楼美食</h2>
+        <section class="food-list">
+            <div class="food-item">
+                <div class="food-image">牛骨粉图片</div>
+                <div class="food-info">
+                    <h2 class="food-title">牛骨粉</h2>
+                    <p>汤底醇厚，牛骨肉软烂入味，粉条滑爽，冬天吃尤其暖胃。</p>
+                    <div class="rating">推荐指数：⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-image">麻辣烫图片</div>
+                <div class="food-info">
+                    <h2 class="food-title">麻辣烫</h2>
+                    <p>自选菜品丰富，汤底麻辣鲜香，适合喜欢DIY搭配的人。</p>
+                    <div class="rating">推荐指数：⭐⭐⭐⭐</div>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-image">小碗菜图片</div>
+                <div class="food-info">
+                    <h2 class="food-title">小碗菜</h2>
+                    <p>菜品多样，分量适中，适合一人食或想尝试多种菜的人，性价比高。</p>
+                    <div class="rating">推荐指数：⭐⭐⭐⭐</div>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-image">茶泡饭图片</div>
+                <div class="food-info">
+                    <h2 class="food-title">茶泡饭</h2>
+                    <p>清淡解腻，茶香沁人，但口味偏淡，可能不适合喜欢重口味的人。</p>
+                    <div class="rating">推荐指数：⭐⭐⭐</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recommendations">
+            <h2>总结推荐</h2>
+            <div class="recommendation-category">
+                <h3>必吃榜</h3>
+                <p>牛骨粉、亦鱼亦饭、大盘鸡面</p>
+            </div>
+            <div class="recommendation-category">
+                <h3>清爽选择</h3>
+                <p>凉皮、茶泡饭</p>
+            </div>
+            <div class="recommendation-category">
+                <h3>健康之选</h3>
+                <p>健康餐、小碗菜</p>
+            </div>
+            <div class="recommendation-category">
+                <h3>肉食狂欢</h3>
+                <p>馋肉娃、麻辣烫</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 重生之我在华农吃什么 - 华中农业大学美食指南</p>
+    </footer>
+</body>
+</html>
